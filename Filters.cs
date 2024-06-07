@@ -481,7 +481,6 @@ namespace computer_graphics_lab1
                             newAverage[k++] =(currentColor.R + currentColor.G + currentColor.B)/3;
                         }
                     }
-                    //Color neighbourColor = sourceImage.GetPixel(x, y);
                     average = sort(newAverage, 0, size - 1);
                     Color pixelColor = Color.FromArgb(Math.Min(Math.Max(average, 0), 255), Math.Min(Math.Max(average, 0), 255), Math.Min(Math.Max(average, 0), 255));
                     filteredImage.SetPixel(x, y, pixelColor);
